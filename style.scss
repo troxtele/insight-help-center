@@ -30,7 +30,7 @@
   border-radius: 8px;
 }
 
-$content-width: 650px;
+$content-width: 720px;
 
 html {
   scroll-behavior: smooth;
@@ -64,7 +64,7 @@ h2 {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
-  // padding-top: 2rem;
+  padding-bottom: 8px;
 }
 
 h3 {
@@ -133,22 +133,20 @@ section {
   justify-content: center;
   align-items: center;
 }
-.container {
-}
 
 .rotate {
   transform: rotate(180deg);
 }
 
-.mt-21 {
-  margin-top: 21px;
+.mt-24 {
+  margin-top: 24px;
 }
-.mb-21 {
-  margin-bottom: 21px;
+.mb-24 {
+  margin-bottom: 24px;
 }
 
-.mt-16 {
-  margin-top: 16px;
+.mt-18 {
+  margin-top: 18px;
 }
 
 .mt-40 {
@@ -162,11 +160,6 @@ section {
 .hidden {
   display: none !important;
 }
-
-// .contents {
-//   display: grid;
-//   gap: 2.2rem;
-// }
 
 /*---------------------------------------------------- 
 Header Area
@@ -275,19 +268,29 @@ main {
       }
     }
 
+    .heightwidth {
+      max-height: 370px;
+      width: unset;
+      transition: 0.34 ease-in-out;
+    }
+
     svg {
-      transition: 0.3s ease-in-out;
+      transition: 0.4s ease-in-out;
     }
 
     ul {
       display: grid;
-      margin-top: 16px;
+
       gap: 16px;
       border-radius: 12px;
       overflow: hidden;
-
+      max-height: 0;
       height: 100%;
       transition: 0.3s ease-in-out;
+
+      li:first-child {
+        margin-top: 16px;
+      }
 
       li {
         list-style: none;
@@ -311,7 +314,7 @@ main {
     }
   }
 
-  .left-content:not(:last-child) {
+  .left-content {
     border-bottom: 1px solid var(--gry);
   }
 }
@@ -319,14 +322,14 @@ main {
 .all-sections {
   display: flex;
   flex-direction: column;
-  max-width: 54rem;
+  max-width: 720px;
   width: 100%;
-  margin-left: 402px;
+  margin-left: 428px;
 }
 .paras {
   max-width: $content-width;
   display: grid;
-  gap: 21px;
+  gap: 24px;
 }
 
 .img-content {
