@@ -62,8 +62,9 @@ function feedback(val, index) {
   }
 }
 
-function msgSent(e) {
+function msgSent(e, i) {
   e.preventDefault();
-  inbox.classList.add("hidden");
-  sent.classList.remove("hidden");
+  inbox[i].classList.add("invisible");
+  sent[i].classList.remove("invisible");
+  sent[i].classList.add("visible");
 }
