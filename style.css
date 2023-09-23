@@ -136,10 +136,6 @@ section {
   margin-top: 24px;
 }
 
-.mb-24 {
-  margin-bottom: 24px;
-}
-
 .mt-18 {
   margin-top: 18px;
 }
@@ -148,12 +144,33 @@ section {
   margin-top: 40px;
 }
 
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 .ml-5 {
   margin-left: 21px;
 }
 
 .hidden {
   display: none !important;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 100%;
+  transition: 0.3s linear;
+  max-height: 400px;
+}
+
+.invisible {
+  visibility: hidden !important;
+  opacity: 0% !important;
+  height: 0;
 }
 
 /*---------------------------------------------------- 
@@ -448,13 +465,13 @@ main {
   max-width: 406px;
   width: 100%;
 }
-.opportunites-scanner .feedback {
-  margin-top: 40px;
+
+.feedback {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.opportunites-scanner .feedback .frame {
+.feedback .frame {
   max-width: 675px;
   width: 100%;
   min-height: 208px;
@@ -466,18 +483,18 @@ main {
   flex-direction: column;
   background-color: #f6f7f8;
 }
-.opportunites-scanner .feedback .frame .heading {
+.feedback .frame .heading {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.opportunites-scanner .feedback .frame .buttons {
+.feedback .frame .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
-.opportunites-scanner .feedback .frame .buttons .btn {
+.feedback .frame .buttons .btn {
   margin-top: 10px;
   font-size: 18px;
   line-height: 24px;
@@ -491,24 +508,24 @@ main {
   transition: 0.3s linear;
   cursor: pointer;
 }
-.opportunites-scanner .feedback .frame .buttons .btn:first-child {
+.feedback .frame .buttons .btn:first-child {
   border: 1px solid var(--green);
   color: var(--green);
 }
-.opportunites-scanner .feedback .frame .buttons .btn:last-child {
+.feedback .frame .buttons .btn:last-child {
   border: 1px solid var(--header-color);
   color: var(--header-color);
 }
-.opportunites-scanner .feedback .frame .buttons .btn:hover {
+.feedback .frame .buttons .btn:hover {
   color: white;
 }
-.opportunites-scanner .feedback .frame .buttons .btn:first-child:hover {
+.feedback .frame .buttons .btn:first-child:hover {
   background-color: var(--green);
 }
-.opportunites-scanner .feedback .frame .buttons .btn:last-child:hover {
+.feedback .frame .buttons .btn:last-child:hover {
   background-color: var(--header-color);
 }
-.opportunites-scanner .feedback .frame .info {
+.feedback .frame .info {
   margin-top: 21px;
   text-align: center;
   max-width: 616px;
@@ -516,19 +533,19 @@ main {
   line-height: 19px;
   font-weight: 400;
 }
-.opportunites-scanner .feedback .frame .info a {
+.feedback .frame .info a {
   font-weight: 700;
   color: var(--green);
 }
-.opportunites-scanner .feedback .frame .inbox {
+.feedback .frame .inbox {
   margin-top: 21px;
 }
-.opportunites-scanner .feedback .frame .inbox h3 {
+.feedback .frame .inbox h3 {
   font-size: 18px;
   list-style: 24px;
   font-weight: 700;
 }
-.opportunites-scanner .feedback .frame .inbox textarea {
+.feedback .frame .inbox textarea {
   margin-top: 20px;
   width: 401px;
   height: 120px;
@@ -543,19 +560,19 @@ main {
   font-family: "Inter", sans-serif;
   transition: 0.3s ease-in-out;
 }
-.opportunites-scanner .feedback .frame .inbox textarea::-moz-placeholder {
+.feedback .frame .inbox textarea::-moz-placeholder {
   color: rgb(149, 149, 149);
 }
-.opportunites-scanner .feedback .frame .inbox textarea::placeholder {
+.feedback .frame .inbox textarea::placeholder {
   color: rgb(149, 149, 149);
 }
-.opportunites-scanner .feedback .frame .inbox textarea:focus {
+.feedback .frame .inbox textarea:focus {
   outline-color: var(--green);
 }
-.opportunites-scanner .feedback .frame .inbox .input-wrapper {
+.feedback .frame .inbox .input-wrapper {
   position: relative;
 }
-.opportunites-scanner .feedback .frame .inbox button {
+.feedback .frame .inbox button {
   border: none;
   color: var(--green);
   font-weight: 700;
@@ -566,22 +583,22 @@ main {
   right: 14px;
   bottom: 14px;
 }
-.opportunites-scanner .feedback .frame .assist {
+.feedback .frame .assist {
   max-width: 267px;
   margin-top: 21px;
 }
-.opportunites-scanner .feedback .frame .assist h3 {
+.feedback .frame .assist h3 {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700px;
   color: var(--green);
   text-align: center;
 }
-.opportunites-scanner .feedback .frame .sent {
+.feedback .frame .sent {
   max-width: 267px;
   margin-top: 21px;
 }
-.opportunites-scanner .feedback .frame .sent h3 {
+.feedback .frame .sent h3 {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700px;

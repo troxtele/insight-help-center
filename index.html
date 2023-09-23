@@ -400,6 +400,60 @@
               </div>
             </div>
           </section>
+
+          <!-- Feedback -->
+          <div class="feedback mb-40">
+            <div class="frame">
+              <div class="heading">
+                <h4>Was this helpful?</h4>
+              </div>
+              <!-- buttons -->
+              <div class="buttons">
+                <!-- yes -->
+                <div href="#" class="green btn" onclick="feedback(true, 0)">
+                  Yes
+                </div>
+                <!-- No -->
+                <div href="#" class="gry btn" onclick="feedback(false, 0)">
+                  no
+                </div>
+              </div>
+              <!-- IF FALSE -->
+              <!-- happy to assist -->
+              <div class="assist invisible">
+                <h3>Happy to Assist!</h3>
+              </div>
+
+              <!-- IF TRUE -->
+              <!-- inbox -->
+              <form class="inbox invisible">
+                <div class="heading">
+                  <h3>We're Here to Help</h3>
+                </div>
+                <!-- input -->
+                <div class="input-wrapper">
+                  <textarea
+                    placeholder="We're sorry that our article didn't fully address your question. Please provide us with more details or contact our support team for personalized assistance. | "
+                    name="support"
+                  ></textarea>
+
+                  <button onclick="msgSent(event)">Send</button>
+                </div>
+              </form>
+
+              <div class="sent invisible">
+                <h3>Message Delivered to our support team</h3>
+              </div>
+              <!-- info -->
+              <div class="info">
+                If you have any other questions or need further assistance, feel
+                free to contact us at
+                <a href="mailto: support@tipigo.com">support@tipigo.com</a>.
+                We're here to help you make the most of Tipigo Insight for your
+                investment success!
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Portfolio -->
         <div class="portfolio hiddenf">
@@ -1417,6 +1471,59 @@
               </div>
             </div>
           </section>
+          <!-- Feedback -->
+          <div class="feedback mb-40">
+            <div class="frame">
+              <div class="heading">
+                <h4>Was this helpful?</h4>
+              </div>
+              <!-- buttons -->
+              <div class="buttons">
+                <!-- yes -->
+                <div href="#" class="green btn" onclick="feedback(true, 1)">
+                  Yes
+                </div>
+                <!-- No -->
+                <div href="#" class="gry btn" onclick="feedback(false, 1)">
+                  no
+                </div>
+              </div>
+              <!-- IF FALSE -->
+              <!-- happy to assist -->
+              <div class="assist invisible">
+                <h3>Happy to Assist!</h3>
+              </div>
+
+              <!-- IF TRUE -->
+              <!-- inbox -->
+              <form class="inbox invisible">
+                <div class="heading">
+                  <h3>We're Here to Help</h3>
+                </div>
+                <!-- input -->
+                <div class="input-wrapper">
+                  <textarea
+                    placeholder="We're sorry that our article didn't fully address your question. Please provide us with more details or contact our support team for personalized assistance. | "
+                    name="support"
+                  ></textarea>
+
+                  <button onclick="msgSent(event)">Send</button>
+                </div>
+              </form>
+
+              <div class="sent invisible">
+                <h3>Message Delivered to our support team</h3>
+              </div>
+              <!-- info -->
+              <div class="info">
+                If you have any other questions or need further assistance, feel
+                free to contact us at
+                <a href="mailto: support@tipigo.com">support@tipigo.com</a>.
+                We're here to help you make the most of Tipigo Insight for your
+                investment success!
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Opportunities -->
         <div class="opportunites-scanner">
@@ -1895,7 +2002,7 @@
           </section>
 
           <!-- Feedback -->
-          <div class="feedback">
+          <div class="feedback mt-40">
             <div class="frame">
               <div class="heading">
                 <h4>Was this helpful?</h4>
@@ -1903,21 +2010,23 @@
               <!-- buttons -->
               <div class="buttons">
                 <!-- yes -->
-                <div href="#" class="green btn" onclick="feedback(true)">
+                <div href="#" class="green btn" onclick="feedback(true, 2)">
                   Yes
                 </div>
                 <!-- No -->
-                <div href="#" class="gry btn" onclick="feedback(false)">no</div>
+                <div href="#" class="gry btn" onclick="feedback(false, 2)">
+                  no
+                </div>
               </div>
               <!-- IF FALSE -->
               <!-- happy to assist -->
-              <div class="assist hidden">
+              <div class="assist invisible">
                 <h3>Happy to Assist!</h3>
               </div>
 
               <!-- IF TRUE -->
               <!-- inbox -->
-              <form class="inbox hidden">
+              <form class="inbox invisible">
                 <div class="heading">
                   <h3>We're Here to Help</h3>
                 </div>
@@ -1932,7 +2041,7 @@
                 </div>
               </form>
 
-              <div class="sent hidden">
+              <div class="sent invisible">
                 <h3>Message Delivered to our support team</h3>
               </div>
               <!-- info -->

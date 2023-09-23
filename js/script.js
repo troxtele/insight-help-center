@@ -43,19 +43,22 @@ window.onscroll = () => {
 
 // FEEDBACK
 
-const feedbackContainer = document.querySelector(".feedback");
-const btns = feedbackContainer.querySelector(".buttons");
-const inbox = feedbackContainer.querySelector(".inbox");
-const assist = feedbackContainer.querySelector(".assist");
-const sent = feedbackContainer.querySelector(".sent");
+const feedbackContainer = [...document.querySelectorAll(".feedback")];
+const btns = [...document.querySelectorAll(".buttons")];
+const inbox = [...document.querySelectorAll(".inbox")];
+const assist = [...document.querySelectorAll(".assist")];
+const sent = [...document.querySelectorAll(".sent")];
 
-function feedback(val) {
-  btns.classList.add("hidden");
-
+function feedback(val, index) {
+  console.log(btns);
+  console.log(btns[index]);
+  btns[index].classList.add("invisible");
   if (val) {
-    inbox.classList.remove("hidden");
+    assist[index].classList.remove("invisible");
+    assist[index].classList.add("visible");
   } else {
-    assist.classList.remove("hidden");
+    inbox[index].classList.remove("invisible");
+    inbox[index].classList.add("visible");
   }
 }
 
